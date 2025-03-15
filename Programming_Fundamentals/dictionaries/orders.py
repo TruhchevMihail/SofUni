@@ -19,3 +19,5 @@ while True:
 for name, item in products.items():
     total_price = item["price"] * item["quantity"]
     print(f"{name} -> {total_price:.2f}")
+
+print(products)
