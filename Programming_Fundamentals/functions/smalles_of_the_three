@@ -1,0 +1,10 @@
+def smallest_of_the_three(a, b, c):
+    return min(a, b, c)
+
+
+number_1 = int(input())
+number_2 = int(input())
+number_3 = int(input())
+
+smallest = smallest_of_the_three(number_1, number_2, number_3)
+print(smallest)
