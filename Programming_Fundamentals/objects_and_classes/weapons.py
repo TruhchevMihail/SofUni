@@ -1,18 +1,24 @@
 class Weapon:
-    def __init__(self, name, damage, bullets: int):
-        self.name = name
-        self.damage = damage
+    def __init__(self , bullets: int):
         self.bullets = bullets
-
-    def __str__(self):
-        return f"{self.name} (damage: {self.damage})"
-
+    
     def shoot(self):
-        if self.bullets > 0:
+        if self.bullets == 0:
+            return "no bullets left"
+        else:
             self.bullets -= 1
             return "shooting..."
-        else:
-            return "no bullets left"
-
+    
     def __repr__(self):
-        return f"Weapon('{self.name}', {self.damage}), Remaining bullets: {self.bullets}"
+        return f"Remaining bullets: {self.bullets}"
+    
+
+weapon = Weapon(5)
+print(weapon.shoot())
+print(weapon.shoot())
+print(weapon)
+print(weapon.shoot())
+print(weapon.shoot())
+print(weapon.shoot())
+print(weapon.shoot())
+print(weapon)
