@@ -10,13 +10,13 @@ for _ in range(n):
         number = int(query[1])
         stack.append(number)
 
-    elif command == '2':
+    elif command == '2' and stack:
         stack.pop()
 
-    elif command == '3':
+    elif command == '3' and stack:
         print(max(stack))
-    
-    elif command == '4':
+
+    elif command == '4' and stack:
         print(min(stack))
 
-print(', '.join(map(str, stack)))
+print(', '.join(map(str, reversed(stack))))
