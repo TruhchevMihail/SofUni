@@ -1,4 +1,4 @@
 word = list(input())
 
 while word:
-    print(word.pop, end='')
+    print(word.pop(), end='')
