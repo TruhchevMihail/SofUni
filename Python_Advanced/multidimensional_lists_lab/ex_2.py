@@ -3,7 +3,7 @@ rows = int(input())
 matrix = []
 
 for row_index in range(rows):
-    raw_data = [int(el)for el in input().split(", ")]
-    matrix.append(raw_data[row_index] if row_index % 2 == 0 else None)
+    raw_data = [int(el)for el in input().split(", ") if int(el) % 2 == 0]
+    matrix.append(raw_data)
 
 print(matrix)
