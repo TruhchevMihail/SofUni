@@ -7,14 +7,23 @@ for i in range(len(parentheses)):
         steck.append(parentheses[i])
     
     elif parentheses[i] == ")":
-        if steck[-1] == "(":
+        if steck and steck[-1] == "(":
             steck.pop()
+        else:
+            print("NO")
+            break
     elif parentheses[i] == "]":
-        if steck[-1] == "[":
+        if steck and steck[-1] == "[":
             steck.pop()
+        else:
+            print("NO")
+            break
     elif parentheses[i] == "}":
-        if steck[-1] == "{":
+        if steck and steck[-1] == "{":
             steck.pop()
+        else:
+            print("NO")
+            break
 
     else:
         print("NO")
