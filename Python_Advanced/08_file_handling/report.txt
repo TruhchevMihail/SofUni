@@ -1,0 +1,16 @@
+.c
+- - - test2.c
+.js
+- - - test1.js
+.php
+- - - test.php
+.py
+- - - directorty_traversal.py
+- - - even_lines.py
+- - - file_manipulator.py
+- - - line_numbers.py
+.r
+- - - test3.r
+.txt
+- - - text.txt
+- - - text.txt
