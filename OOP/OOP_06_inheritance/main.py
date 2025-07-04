@@ -1,9 +1,13 @@
-from project.lizard import Lizard
-from project.mammal import Mammal
+from project.drink import Drink
+from project.food import Food
+from project.product_repository import ProductRepository
 
-mammal = Mammal("Stella")
-print(mammal.__class__.__bases__[0].__name__)
-print(mammal.name)
-lizard = Lizard("John")
-print(lizard.__class__.__bases__[0].__name__)
-print(lizard.name)
+food = Food("apple")
+drink = Drink("water")
+repo = ProductRepository()
+repo.add(food)
+repo.add(drink)
+print(repo.products)
+print(repo.find("water"))
+repo.find("apple").decrease(5)
+print(repo)
